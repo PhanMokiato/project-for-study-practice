@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Making an order</title>
+</head>
+<body>
+<div>
+    <h3>Type of making an order</h3>
+    <p>To make an order, please, write in these fields:</p>
+            <form method="post">
+                <input type="hidden" value="@ViewBag.FlowerId" name="FlowerId" />
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="User" /> </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><input type="text" name="Address" /></td>
+                    </tr>
+                    <tr>
+                        <td>Contact Phone:</td>
+                        <td><input type="text" name="ContactPhone" /></td>
+                    </tr>
+                    <tr><td><input type="submit" value="Sent" /> </td><td></td></tr>
+                </table>
+            </form>
+</div>
+</body>
+</html>

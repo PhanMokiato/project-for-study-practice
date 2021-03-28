@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebApplication.Models.Flower>
+@{
+    ViewData["Title"] = "Flower list";
+}
+<!DOCTYPE html>
+
+<div class="text-center">
+    <html>
+    <head>
+        <title>Flower Shop</title>
+    </head>
+    <body>
+        <h3>Flowers</h3>
+        <table>
+            <tr>
+                <td><i>Type</i></td>
+                <td><i>Price</i></td>
+                <td></td>
+            </tr>
+            @foreach (var flower in Model)
+                {
+                <tr>
+                    <td>@flower.Name</td>
+                    <td>@flower.Price</td>
+                    <td><a href="~/Home/Buy/@flower.Id">To buy</a></td>
+                </tr>
+            }
+        </table>
+    </body>
+    </html>
+</div>
