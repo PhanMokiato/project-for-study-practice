@@ -30,7 +30,7 @@ namespace WebApplication
             string connection = Configuration.GetConnectionString("DefaultConnection");
             // добавляем контекст MobileContext в качестве сервиса в приложение
             services.AddDbContext<MobileContext>(options =>
-                options.UseSqlServer(connection));
+                options.UseNpgsql(connection));
             services.AddControllersWithViews();
         }
 

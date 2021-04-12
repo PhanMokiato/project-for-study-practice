@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "Npgsql": "5.0.3",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.2",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -731,6 +732,23 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Npgsql.dll": {}
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/5.0.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.4",
+          "Npgsql": "5.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "assemblyVersion": "5.0.2.0",
+            "fileVersion": "5.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -3207,6 +3225,13 @@
       "sha512": "sha512-IDx2tijhyXGz7tVXQH0iGnCnW0ReSUy3UC99ytSklJKscob5WV8eLZWuT/jqYBq0l07RmZOSrdjUEDEetsgDIA==",
       "path": "npgsql/5.0.3",
       "hashPath": "npgsql.5.0.3.nupkg.sha512"
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xdhI0Y1uMxEUbH00T9kLk5m4JN8b4bAHv8fX+nU3GzdEsIgI0k0tKM4ZJ/RjkvGE1L5h4Y+oBZNNqzgetOTBtg==",
+      "path": "npgsql.entityframeworkcore.postgresql/5.0.2",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",

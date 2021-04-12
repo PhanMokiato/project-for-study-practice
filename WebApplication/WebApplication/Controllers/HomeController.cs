@@ -4,6 +4,7 @@ using WebApplication.Models;
 
 namespace WebApplication.Controllers
 {
+    //MSSQL server
     public class HomeController : Controller
     {
         MobileContext db;
@@ -30,6 +31,11 @@ namespace WebApplication.Controllers
             // сохраняем в бд все изменения
             db.SaveChanges();
             return "Thank you, " + order.User + ", for buying from us!";
+        }
+        
+        public IActionResult Privacy()
+        {
+            return View();
         }
     }
 }
