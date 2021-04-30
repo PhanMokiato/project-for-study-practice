@@ -4,8 +4,9 @@ namespace WebApplication.Models
 {
     public class User
     {
-        public int Id { get; set; }
+        private int Id { get; set; }
         public string Name { get; set; } // имя пользователя
-        public int Age { get; set; } // возраст пользователя
+        public int PhoneNumber { get; set; } // возраст пользователя
+        public string Password { get; set; } 
     }
 }

@@ -78,3 +78,4 @@ D:\Study\UP\Rider\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes
 D:\Study\UP\Rider\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Study\UP\Rider\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Buy.cshtml.g.cs
 D:\Study\UP\Rider\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Study\UP\Rider\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\RegistrationForm\Form.cshtml.g.cs
