@@ -1,34 +1,33 @@
 ﻿@{
-    ViewData["Title"] = "Signing up";
+    ViewBag.Title = "Signing in";
+    Layout = "_Layout";
 }
+
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title>Reg</title>
+    <title>Sign</title>
 </head>
 <body>
 <div>
     <h3>Welcome</h3>
-    <p>To make an account, please, write in these fields:</p>
+    <p>To enter your account, please, write in these fields:</p>
             <form method="post">
                 <input type="hidden" value="@ViewBag.UserId" name="UserId" />
                 <table>
                     <tr>
-                        <td>Name:</td>
-                        <td><input type="text" name="Name" /> </td>
-                    </tr>
-                    <tr>
-                        <td>Phone number:</td>
-                        <td><input type="text" name="PhoneNumber" /></td>
+                        <td>Phone Number:</td>
+                        <td><input type="text" name="PhoneNumber" /> </td>
                     </tr>
                     <tr>
                         <td>Password:</td>
                         <td><input type="password" name="Password" /></td>
                     </tr>
-                    <tr><td><input type="submit" value="Create" /> </td><td></td></tr>
+                    <tr><td><input type="submit" value="Enter" /> </td><td></td></tr>
                 </table>
             </form>
 </div>
 </body>
 </html>
+

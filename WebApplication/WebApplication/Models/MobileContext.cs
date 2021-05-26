@@ -12,6 +12,7 @@ namespace WebApplication.Models
         public MobileContext(DbContextOptions<MobileContext> options)
             : base(options)
         {
+            //Database.EnsureDeleted();    
             Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

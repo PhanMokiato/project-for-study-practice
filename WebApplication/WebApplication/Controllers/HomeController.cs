@@ -25,12 +25,18 @@ namespace WebApplication.Controllers
             return View();
         }
         [HttpPost]
-        public string Buy(Order order)
+        public IActionResult Buy(Order order)
         {
+            
             db.Orders.Add(order);
             // сохраняем в бд все изменения
             db.SaveChanges();
-            return "Thank you, " + order.User + ", for buying from us!";
+            return RedirectToAction("ThankYou", order);
+        }
+        public IActionResult ThankYou(Order order)
+        {
+            ViewData["Name"] = order.User;
+            return View();
         }
         
         public IActionResult Privacy()
